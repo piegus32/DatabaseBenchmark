@@ -81,9 +81,9 @@ public class InsertCustomersBenchmark
         dbContext.SaveChanges();
     }
 
-    //[Benchmark]
-    //public void InsertNoSqlCustomers()
-    //{
-    //    _collection.InsertMany(_noSqlCustomers);
-    //}
+    [Benchmark]
+    public void InsertNoSqlCustomers()
+    {
+        _collection.InsertMany(_noSqlCustomers);
+    }
 }
